@@ -1,0 +1,291 @@
+:root {
+    --red-color: #c72727;
+    --yello-color: #f99500;
+    --purple-color: #a66bbe;
+    --blue-color: #009cff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    align-items: center;
+}
+
+.navbar .nav-img img {
+    width: 180px;
+}
+
+.navbar .nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-btn a {
+    margin-right: 2rem;
+}
+
+.navbar .social-icons i {
+    color: #777777;
+    margin-right: 1rem;
+}
+
+/*Overlay*/
+.overlay {
+    background: #333;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.overlay::before {
+    content: '';
+    background: url("../img/featured.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.overlay-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.overlay-content {
+    z-index: 2;
+    padding: 3rem 0;
+}
+
+.overlay .overlay-container .overlay-content *:first-child {
+
+}
+
+/*h1 inside the container*/
+.overlay .overlay-container .overlay-content *:nth-child(2) {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+/*para inside the container*/
+.overlay .overlay-container .overlay-content *:nth-child(3) {
+    margin: 0 0 2rem 0;
+    line-height: 1.5;
+}
+
+/*EDITOR PICKS STYLE*/
+.editor {
+    background: #f3f3f3;
+    box-sizing: border-box;
+}
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor p {
+    margin: 0;
+}
+
+.one-editor,
+.two-editor,
+.three-editor,
+.four-editor,
+.five-editor,
+.six-editor,
+.seven-editor {
+    padding: 1rem;
+    background: #fff;
+}
+
+.editor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 2rem;
+    background: #f4f4f4;
+    grid-gap: 2rem;
+}
+
+.editor img {
+    width: 100%;
+}
+
+.one-editor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / span 2;
+    grid-gap: 1rem;
+}
+
+.one-editor > div {
+    padding: 1rem 0;
+}
+
+.one-editor > div > div {
+    margin-top: 1rem;
+}
+
+.one-editor > div > h3 {
+    margin: 0.7rem 0;
+    font-weight: bold;
+}
+
+.one-editor > div > p {
+    line-height: 1.5;
+}
+
+.two-editor {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.two-editor > div > div {
+    margin-bottom: 1rem;
+}
+
+.two-editor p {
+    line-height: 1.5;
+}
+
+.three-editor .tech {
+    margin: 0.4rem 0;
+}
+
+.three-editor h3 {
+    margin-bottom: 0.5rem;
+}
+
+.three-editor p {
+    line-height: 1.5;
+}
+
+.four-editor .sports {
+    margin-bottom: 0.5rem;
+}
+
+.four-editor h3 {
+    margin-bottom: 0.5rem;
+}
+
+.four-editor p {
+    line-height: 1.5;
+}
+
+.five-editor .tech {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.five-editor h3 {
+    margin-bottom: 0.5rem;
+}
+
+.five-editor p {
+    line-height: 1.5;
+}
+
+.six-editor {
+    background: var(--red-color);
+    color: #fff;
+}
+
+.six-editor .sports {
+    margin: 2rem 0 1rem 1rem;
+}
+
+.six-editor h3 {
+    margin: 0 0 0.5rem 1rem;
+}
+
+.six-editor p {
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+.seven-editor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2 / span 2;
+}
+
+.seven-editor .ent {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.seven-editor h3 {
+    margin-bottom: .5rem;
+}
+
+.seven-editor p {
+    line-height: 1.5;
+}
+
+/*Footer*/
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer .footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.footer-container img {
+    width: 145px;
+}
+
+.footer-container > *:first-child > p {
+    line-height: 1.5;
+}
+
+.footer-container > *:nth-child(2) > input {
+    margin-bottom: 1rem;
+    width: 70%;
+    height: 35px;
+}
+
+.footer-container > *:last-child {
+    background: #444444;
+    grid-column: 1 / span 4;
+}
+
+.footer-container > *:nth-child(4) > a {
+    width: 67px;
+}
+
+.footer-container > *:last-child {
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+

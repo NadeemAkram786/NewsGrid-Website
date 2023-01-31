@@ -1,0 +1,9 @@
+@media (max-width: 988px) {
+        .one-editor {
+            grid-template-columns: 1fr;
+        }
+
+        .social-icons {
+            display: none;
+        }
+}

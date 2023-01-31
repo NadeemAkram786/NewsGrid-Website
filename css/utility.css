@@ -1,0 +1,65 @@
+.btn-red {
+    background: var(--red-color);
+    color: #fff;
+    padding: 0.8rem 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.sports {
+    background: var(--yello-color);
+    color: #fff;
+    font-size: 0.7rem;
+    width: 50px;
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.ent {
+    background: var(--purple-color);
+    color: #fff;
+    font-size: 0.7rem;
+    width: 98px;
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.tech {
+    background: var(--blue-color);
+    color: #fff;
+    font-size: 0.7rem;
+    width: 80px;
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    width: 62%;
+}
+
+.btn-yellow {
+    background: var(--yello-color);
+    color: #fff;
+    padding: 0.8rem 0.9rem;
+}
+

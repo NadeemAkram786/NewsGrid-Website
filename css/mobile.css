@@ -1,0 +1,23 @@
+@media (max-width: 800px) {
+    .editor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .one-editor {
+        grid-template-columns: 1fr;
+        grid-column: 1 / span 1;
+    }
+
+    .seven-editor {
+        grid-template-columns: 1fr;
+        grid-column: 1 / span 1;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .footer-container > *:last-child {
+        grid-column: 1 / span 2;
+    }
+}
